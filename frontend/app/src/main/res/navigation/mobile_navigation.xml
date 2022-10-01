@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.unipiandroid.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.unipiandroid.ui.gallery.GalleryFragment"
+        android:label="@string/menu_university"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.unipiandroid.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_dioikhsh"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_departments"
+        android:name="com.example.unipiandroid.ui.departments.DepartmentsFragment"
+        android:label="@string/menu_departments" />
+
+    <fragment
+        android:id="@+id/nav_research"
+        android:name="com.example.unipiandroid.ui.research.ResearchFragment"
+        android:label="@string/menu_research"
+        tools:layout="@layout/fragment_research" />
+
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="com.example.unipiandroid.ui.support.SupportFragment"
+        android:label="@string/menu_support" />
+
+    <fragment
+        android:id="@+id/nav_communication"
+        android:name="com.example.unipiandroid.ui.communication.CommunicationFragment"
+        android:label="@string/menu_communication" />
+</navigation>

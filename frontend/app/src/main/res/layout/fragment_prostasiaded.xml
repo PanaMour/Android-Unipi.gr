@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.ProstasiaDedomenon">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134">
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#232C55"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/unipiLogo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/unipi"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar3"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar3"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="@+id/toolbar3"
+        app:layout_constraintTop_toTopOf="@+id/toolbar3"
+        app:srcCompat="@drawable/unipi_logo_small" />
+
+    <TextView
+        android:id="@+id/loginText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:clickable="true"
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar3"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar3"
+        app:layout_constraintStart_toEndOf="@+id/unipiLogo2"
+        app:layout_constraintTop_toTopOf="@+id/toolbar3"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/announcement_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="Προστασία Δεδομένων Προσωπικού Χαρακτήρα"
+                android:textColor="@color/blue_unipi"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="20sp"
+                android:text="@string/pd1"
+                android:textColor="@color/blue_unipi"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="20sp"
+                android:text="@string/pd2"
+                android:textColor="@color/blue_unipi"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="20sp"
+                android:text="@string/pd3"
+                android:textColor="@color/blue_unipi"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="20sp"
+                android:text="@string/pd4"
+                android:textColor="@color/blue_unipi"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="20sp"
+                android:text="@string/pd5"
+                android:textColor="@color/blue_unipi"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="20sp"
+                android:text="@string/pd6"
+                android:textColor="@color/blue_unipi"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="20sp"
+                android:text="@string/pd7"
+                android:textColor="@color/blue_unipi"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
